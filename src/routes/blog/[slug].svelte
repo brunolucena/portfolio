@@ -20,8 +20,10 @@
 	}
 </script>
 
-<script>
-	export let body;
+<script lang="ts">
+	import type { Article } from 'src/models/blog';
+
+	export let body: { article: Article };
 
 	const article = body.article;
 </script>
