@@ -21,8 +21,8 @@ export async function get({ params }: Request): Promise<EndpointOutput> {
   if (article) {
     return {
       body: {
-        article
-      }
+        article,
+      },
     };
   }
 }
