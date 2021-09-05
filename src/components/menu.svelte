@@ -15,7 +15,7 @@
 				</li>
 
 				<li>
-					<img alt="logo" src="public/images/logo.png" />
+					<img alt="logo" src="./public/images/logo.png" />
 				</li>
 
 				<li>
