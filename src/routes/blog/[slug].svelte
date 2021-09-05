@@ -12,7 +12,7 @@
 		if (res.ok) {
 			return {
 				props: {
-					article: JSON.parse(body.article)
+					article: JSON.parse(body.article),
 				}
 			};
 		}

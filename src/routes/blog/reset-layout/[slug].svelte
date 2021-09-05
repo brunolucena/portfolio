@@ -1,14 +1,18 @@
 <script context="module" lang="ts">
 	import type { LoadInput, LoadOutput } from '@sveltejs/kit';
 
+	export const prerender = true;
+
 	export async function load({ fetch, page }: LoadInput): Promise<LoadOutput> {
 		const url = `/blog/${page.params.slug}.json`;
 		const res = await fetch(url);
 
+		const body = await res.json();
+
 		if (res.ok) {
 			return {
 				props: {
-					body: await res.json()
+					article: JSON.parse(body.article),
 				}
 			};
 		}
@@ -21,11 +25,7 @@
 </script>
 
 <script lang="ts">
-	import type { Article } from 'src/models/blog';
-
-	export let body: { article: Article };
-
-	const article = body.article;
+	export let article;
 </script>
 
 <svelte:head>
