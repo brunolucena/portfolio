@@ -1,3 +1,7 @@
+<script context="module" lang="ts">
+	export const prerender = true;
+</script>
+
 <svelte:head>
 	<title>About - Bruno Lucena Portfolio</title>
 </svelte:head>

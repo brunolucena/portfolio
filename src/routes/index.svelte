@@ -1,23 +1,27 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script lang="ts">
 	import Container from 'src/components/container.svelte';
 	import HexagonGrid from 'src/components/hexagon-grid/hexagon-grid.svelte';
 	import type { Hexagon } from 'src/components/hexagon-grid/models';
 
 	const hexagons: Hexagon[] = [
-		{ id: '1', icon: 'cib:react', text: "Text", title: "Titlte" },
-		{ id: '2', icon: 'akar-icons:nextjs-fill', text: "Text", title: "Titlte" },
-		{ id: '3', icon: 'cib:svelte', text: "Text", title: "Titlte" },
-		{ id: '4', icon: 'cib:javascript', text: "Text", title: "Titlte" },
-		{ id: '5', icon: 'cib:typescript', text: "Text", title: "Titlte" },
-		{ id: '6', icon: 'cib:html5', text: "Text", title: "Titlte" },
-		{ id: '7', icon: 'cib:css3', text: "Text", title: "Titlte" },
-		{ id: '8', icon: 'cib:sass', text: "Text", title: "Titlte" },
-		{ id: '9', icon: 'akar-icons:nextjs-fill', text: "Text", title: "Titlte" },
-		{ id: '10', icon: 'cib:svelte', text: "Text", title: "Titlte" },
-		{ id: '11', icon: 'cib:javascript', text: "Text", title: "Titlte" },
-		{ id: '12', icon: 'cib:react', text: "Text", title: "Titlte" },
-		{ id: '13', icon: 'cib:react', text: "Text", title: "Titlte" },
-		{ id: '14', icon: 'cib:react', text: "Text", title: "Titlte" },
+		{ id: '1', icon: 'cib:react', text: 'Text', title: 'Titlte' },
+		{ id: '2', icon: 'akar-icons:nextjs-fill', text: 'Text', title: 'Titlte' },
+		{ id: '3', icon: 'cib:svelte', text: 'Text', title: 'Titlte' },
+		{ id: '4', icon: 'cib:javascript', text: 'Text', title: 'Titlte' },
+		{ id: '5', icon: 'cib:typescript', text: 'Text', title: 'Titlte' },
+		{ id: '6', icon: 'cib:html5', text: 'Text', title: 'Titlte' },
+		{ id: '7', icon: 'cib:css3', text: 'Text', title: 'Titlte' },
+		{ id: '8', icon: 'cib:sass', text: 'Text', title: 'Titlte' },
+		{ id: '9', icon: 'akar-icons:nextjs-fill', text: 'Text', title: 'Titlte' },
+		{ id: '10', icon: 'cib:svelte', text: 'Text', title: 'Titlte' },
+		{ id: '11', icon: 'cib:javascript', text: 'Text', title: 'Titlte' },
+		{ id: '12', icon: 'cib:react', text: 'Text', title: 'Titlte' },
+		{ id: '13', icon: 'cib:react', text: 'Text', title: 'Titlte' },
+		{ id: '14', icon: 'cib:react', text: 'Text', title: 'Titlte' }
 	];
 </script>
 
@@ -28,7 +32,7 @@
 <div>
 	<Container>
 		<div class="content">
-			<HexagonGrid hexagons={hexagons} />
+			<HexagonGrid {hexagons} />
 		</div>
 	</Container>
 </div>

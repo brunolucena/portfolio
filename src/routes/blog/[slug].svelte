@@ -1,6 +1,8 @@
 <script context="module" lang="ts">
 	import type { LoadInput, LoadOutput } from '@sveltejs/kit';
 
+	export const prerender = true;
+
 	export async function load({ fetch, page }: LoadInput): Promise<LoadOutput> {
 		const url = `/blog/${page.params.slug}.json`;
 		const res = await fetch(url);
@@ -10,7 +12,7 @@
 		if (res.ok) {
 			return {
 				props: {
-					article: JSON.parse(body.article),
+					article: JSON.parse(body.article)
 				}
 			};
 		}
