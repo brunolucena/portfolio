@@ -34,7 +34,7 @@
 
 <style lang="scss">
 	.container {
-		background-color: #323232;
+		background-color: var(--dark-primary);
 		color: #fff;
 	}
 
