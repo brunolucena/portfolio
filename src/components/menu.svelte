@@ -69,7 +69,7 @@
 		}
 
 		img {
-			margin: 0 100px;
+			margin: 0 50px;
 			height: 70px;
 			z-index: 200;
 		}
