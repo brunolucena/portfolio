@@ -28,6 +28,8 @@
 </li>
 
 <style lang="scss">
+	$primary-color: #7A63FF;
+
 	.hex {
 		position: relative;
 		visibility: hidden;
@@ -85,7 +87,7 @@
 		width: 100%;
 		padding: 5%;
 		box-sizing: border-box;
-		background-color: rgba(0, 128, 128, 0.8);
+		background-color: rgba($primary-color, 0.8);
 		font-weight: 300;
 		-webkit-transition: -webkit-transform 0.2s ease-out, opacity 0.3s ease-out;
 		transition: transform 0.2s ease-out, opacity 0.3s ease-out;
