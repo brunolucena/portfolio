@@ -15,7 +15,9 @@
 				</li>
 
 				<li>
-					<img alt="logo" src="/images/logo.png" />
+					<a href="/" class="no-padding">
+						<img alt="logo" src="/logo/Original.svg" />
+					</a>
 				</li>
 
 				<li>
@@ -37,34 +39,7 @@
 	}
 
 	nav {
-		position: relative;
-		padding-top: 10px;
-		z-index: 100;
-
-		&:after {
-			content: '';
-			position: absolute;
-			top: 100%;
-			left: 50%;
-			transform: translateX(-50%);
-			border-top: 30px solid #323232;
-			border-bottom: 20px solid transparent;
-			border-right: 55px solid transparent;
-			border-left: 55px solid transparent;
-			z-index: 100;
-		}
-
-		&:before {
-			content: '';
-			position: absolute;
-			top: 100%;
-			left: 50%;
-			background-color: #fff;
-			transform: translateX(-50%);
-			height: 25px;
-			width: 164px;
-			z-index: 50;
-		}
+		padding: 10px 0;
 
 		ul {
 			display: flex;
@@ -85,15 +60,17 @@
 			font-weight: 700;
 
 			&:hover {
-				color: #2eb398;
+				color: var(--primary);
+			}
+
+			&.no-padding {
+				padding: 0;
 			}
 		}
 
 		img {
-			position: relative;
-			top: 5px;
-			margin: 0 20px;
-			height: 60px;
+			margin: 0 100px;
+			height: 70px;
 			z-index: 200;
 		}
 	}
