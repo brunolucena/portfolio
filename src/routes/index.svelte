@@ -5,6 +5,7 @@
 <script lang="ts">
 	import Container from 'src/components/container.svelte';
 	import HexagonGrid from 'src/components/hexagon-grid/hexagon-grid.svelte';
+	import Profile from 'src/components/profile.svelte';
 	import type { Hexagon } from 'src/components/hexagon-grid/models';
 
 	const hexagons: Hexagon[] = [
@@ -30,18 +31,24 @@
 </svelte:head>
 
 <div>
-	<Container>
-		<div class="content">
-			<HexagonGrid {hexagons} />
-		</div>
-	</Container>
+	<div class="content-container">
+		<Container>
+			<main class="content">
+				<HexagonGrid {hexagons} />
+			</main>
+		</Container>
+	</div>
+
+	<Profile />
 </div>
 
 <style lang="scss">
+	.content-container {
+		padding: 11px 0;
+	}
+	
 	.content {
 		position: relative;
-		min-height: calc(100vh - 93px);
-		margin: 11px 0;
 		padding: 70px 0;
 
 		&:before {
