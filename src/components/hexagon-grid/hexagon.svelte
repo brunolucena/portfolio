@@ -2,17 +2,18 @@
 	import Icon from '@iconify/svelte';
 	import type { Hexagon } from './models';
 
+	export let fullWidth: boolean = false;
 	export let hexagon: Hexagon;
 </script>
 
-<li class="hex">
+<li class="hex" class:fullWidth={fullWidth}>
 	<div class="hex-in">
 		<div class="hex-link">
 			{#if hexagon.image}
 				<img alt={hexagon.image.alt} src={hexagon.image.src} />
 			{:else if hexagon.icon}
 				<div class="svg">
-					<Icon color="#323232" height="100%" icon={hexagon.icon} width="100%" />
+					<Icon color="#1e1e1e" height="100%" icon={hexagon.icon} width="100%" />
 				</div>
 			{/if}
 
@@ -34,6 +35,10 @@
 		position: relative;
 		visibility: hidden;
 		outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
+
+		&.fullWidth {
+			width: 100% !important;
+		}
 	}
 	.hex::after {
 		content: '';
