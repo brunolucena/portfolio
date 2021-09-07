@@ -1,5 +1,5 @@
 <script>
-  export const maxWidth = '1400px';
+  export const maxWidth = '1200px';
 </script>
 
 <div class="container" style="--maxWidth:{maxWidth}">
