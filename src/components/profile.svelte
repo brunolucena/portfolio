@@ -70,8 +70,8 @@
 			align-items: center;
 			justify-content: center;
 			padding: 50px 20px;
-			border-left: 1px solid rgba(0, 0, 0, 0.2);
-			border-right: 1px solid rgba(0, 0, 0, 0.2);
+			border-left: 1px solid rgba(0, 0, 0, 0.1);
+			border-right: 1px solid rgba(0, 0, 0, 0.1);
 
 			> * {
 				&:not(:first-child) {
