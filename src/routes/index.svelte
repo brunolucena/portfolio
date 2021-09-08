@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+	import Contact from 'src/components/contact.svelte';
 	import Container from 'src/components/container.svelte';
 	import HexagonGrid from 'src/components/hexagon-grid/hexagon-grid.svelte';
 	import Profile from 'src/components/profile.svelte';
@@ -40,6 +41,8 @@
 	</div>
 
 	<Profile />
+
+	<Contact />
 </div>
 
 <style lang="scss">
@@ -49,6 +52,7 @@
 	
 	.content {
 		position: relative;
+		margin: 0 -20px;
 		padding: 70px 0;
 
 		&:before {
