@@ -21,7 +21,7 @@
 				</li>
 
 				<li>
-					<a href="/#blog"> BLOG </a>
+					<a href="https://www.blog.frontendlife.com.br" rel="noopener noreferrer" target="_blank"> BLOG </a>
 				</li>
 
 				<li>
